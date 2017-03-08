@@ -1,0 +1,14 @@
+{
+  "extends": "./node_modules/rxjs-src/tsconfig",
+  "angularCompilerOptions": {
+    "skipMetadataEmit": true,
+    "annotationsAs": "static fields",
+    "annotateForClosureCompiler": true
+  },
+  "compilerOptions": {
+    "declaration": false,
+    "sourceMap": false,
+    "module": "commonjs",
+    "outDir": "rxjs"
+  }
+}
