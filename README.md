@@ -39,6 +39,9 @@ Get this code:
 npm install rxjs-closure
 ```
 
+Consult the `package.json` `devDependencies` to see what version of RxJS has
+been packaged. For the initial release it is 5.2.0.
+
 This package is intended for people already working with Angular, AOT, and
 Closure Compiler. If you're in that group, you probably familiar with a script
 somewhat like the one below, used to call Closure to perform the second half of

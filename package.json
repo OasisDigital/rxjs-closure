@@ -3,11 +3,16 @@
   "version": "0.5.0",
   "description": "RxJS, repackaged to consume with Google Closure Compiler",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OasisDigital/rxjs-closure.git"
+  },
   "scripts": {
     "clean": "rimraf rxjs",
     "tsickle": "tsickle -- -p .",
     "patch": "./patch.sh",
-    "build": "run-s clean tsickle patch"
+    "build": "run-s clean tsickle patch",
+    "prepublish": "npm run build"
   },
   "author": "Kyle Cordes <kyle.cordes@oasisdigital.com>",
   "license": "Apache-2.0",
