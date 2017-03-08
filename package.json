@@ -1,6 +1,6 @@
 {
   "name": "@oasisdigital/rxjs-closure",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "RxJS, repackaged to consume with Google Closure Compiler",
   "main": "index.js",
   "repository": {
