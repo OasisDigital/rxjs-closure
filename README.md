@@ -1,9 +1,20 @@
-# RxJS, for Angular + Closure Compiler - EXPERIMENTAL
+# RxJS, for Angular AOT + Closure Compiler - EXPERIMENTAL
 
 ## Third-party repackaging - EXPERIMENTAL
 
 This is an experimental, third-party repackaging of the RxJS code. Don't use
 this for production code!
+
+## Who?
+
+Kyle Cordes, I work at <https://oasisdigital.com/> and teach at <https://angularbootcamp.com/>
+
+## Why care about Angular AOT + Closure Compiler?
+
+Our customers are mostly big, writing sprawling Angular applications. They have
+legal departments whose job it is to be nervous about tool stacks with many
+different dependencies. A shorter build tool stack that produces small results
+is very appealing.
 
 ## Background
 
@@ -16,7 +27,7 @@ This would be an all-Google build pipeline, and Closure is generally believed
 to be the best available (and perhaps the longest available) solution to produce
 small fast JavaScript output for web deployment.
 
-One missing piece is a version of RxJS that can be consumed with full type
+One missing piece is a packaging of RxJS that can be consumed with full type
 support by Closure Compiler. Note that this is not absolutely necessary, it is
 possible to use an ES2015-module build of RxJS, which is likely to land in the
 official RxJS distribution much sooner. However, much of Closure's magic
@@ -36,7 +47,7 @@ than this effort - it may only happen if someone inside Google does it.)
 Get this code:
 
 ```
-npm install rxjs-closure
+npm install @oasisdigital/rxjs-closure
 ```
 
 Consult the `package.json` `devDependencies` to see what version of RxJS has
@@ -100,5 +111,8 @@ came from smart people who mostly work at Google.
 # TODO
 
 * Publish a demo repo that consumes this one.
-* Ship a side-by-side comparison of the results using this versus the (less
+* Make a side-by-side comparison of the results using this versus the (less
   tricky to obtain) ES2015-bundle version of RxJS.
+* If this experiment turns out to have little value, delete it.
+* If it turns out to be useful, hope the core RxJS ships it instead... then
+  delete this third-party experimental package.

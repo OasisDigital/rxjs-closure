@@ -1,6 +1,6 @@
 {
   "name": "@oasisdigital/rxjs-closure",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "RxJS, repackaged to consume with Google Closure Compiler",
   "main": "index.js",
   "repository": {
@@ -8,7 +8,7 @@
     "url": "https://github.com/OasisDigital/rxjs-closure.git"
   },
   "scripts": {
-    "clean": "rimraf rxjs",
+    "clean": "rimraf rxjs *.tgz",
     "tsickle": "tsickle -- -p .",
     "patch": "./patch.sh",
     "build": "run-s clean tsickle patch",

@@ -4,3 +4,4 @@ yarn.*
 !rxjs
 patch.sh
 tsconfig.json
+*.tgz

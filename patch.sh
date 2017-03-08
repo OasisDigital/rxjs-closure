@@ -6,6 +6,6 @@
 
 sed -i.bak "s/throw /\/\/ Elided to appease Closure... /g"  rxjs/util/root.js
 
-rm rxjs/util/root.bak
+rm rxjs/util/root.js.bak
 
 # TODO Possibly patch for the handful of remaining Closure warnings.
